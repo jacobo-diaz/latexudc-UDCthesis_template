@@ -1,0 +1,1083 @@
+\documentclass[
+documentsize = octavo, % a4 | octavo
+printmode = true, % true: for printing octavo size in A4 paper
+font = cmr, % cmr | utopia | times
+typesize = 10, % 9 | 10 | 11 | 12 | 14
+fontsize = normalsize, % scriptsize | footnotesize | small | normalsize | large | Large
+onehalfspacing = false, % Set one half line space
+language = en, % en | es
+degree = phd, % phd | msc | pt
+titlelogo = udc, % none | udc | udciccp | udcmiema
+titlepage = true, % Show title page
+dedication = true, % Show dedication
+preface = true, % Show preface
+acknowledgements = true, % Show acknowledgements
+abstract-en = true, % Show abstract in english
+abstract-es = true, % Show abstract in spanish
+abstract-ga = true, % Show abstract in galician
+epigraphs = true, % Show epigraphs
+toc = true, % Show table of contents
+lof = true, % Show list of figures
+lot = true, % Show list of tables
+notation = true, % Show notation
+biblatex-globalbib = true, % Show bibliography at the end of document
+biblatex-chapterbib = true, % Show bibliographies per chapter
+frontmatterintoc = true, % Show frontmatter in the table of contents
+printby = true, % Print by before author name
+debug = false, % Debug mode
+draft = false, % Draft mode
+showlayout = false, % Show page layout diagrams
+]{UDCthesis}
+
+% fontmath = default,
+% fontmono = cmr,
+% eqnumbers = true,
+% twocolumn = false,
+% minimal = false,
+% tcolorbox = false,
+% menukeys = false,
+% tikz = true,
+% biblatex = false,
+% biblatex-style = numeric,
+% biblatex-sorting = none,
+
+\graphicspath{{./chapters/6._Combined_specimen/figures/}}
+
+\title{Title, This is the abstract in English. It is required in a PhD. thesis but it is}
+\author{Author Name}
+\authortitle{Author Title}
+\supervisor{Supervisor Name}
+\supervisortitle{Supervisor Title}
+\cosupervisor{Co-supervisor Name}
+\cosupervisortitle{Co-supervisor Title}
+\date{Date}
+
+\addbibresource{./references/references.bib}
+
+\usepackage{blindtext}
+
+% \newacronymentry{GFRP}{GFRP}{glass-fiber reinforced polymer}
+% \newacronymentry{PET}{PET}{polyethylene terephthalate}
+% \newacronymentry{CFRP}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{1CFRP}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{2CFRP}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{3CFRP}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{4CFRP}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{5CFRP}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{6CFRP}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{7CFRP}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{8CFRP}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{9CFRP}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{C1FRP}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{C2FRP}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{C3FRP}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{C4FRP}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{C5FRP}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{C6FRP}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{C7FRP}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{C8FRP}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{C9FRP}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{CFR1P}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{CFR2P}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{CFR3P}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{CFR4P}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{CFR5P}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{CFR6P}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{CFR7P}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{CFR8P}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{CFR9P}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{CFRP1}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{CFRP2}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{CFRP3}{CFRP}{carbon-fiber reinforced polymer}
+% \newglossaryentry{pi}{name={\ensuremath{\pi}}, description={Transcendental number}, type=gl}
+% \newglossaryentry{A}{name={A}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A1}{name={A1}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A2}{name={A2}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A3}{name={A3}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A4}{name={A4}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A5}{name={A5}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A6}{name={A6}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A7}{name={A7}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A8}{name={A8}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A9}{name={A9}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A11}{name={A11}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A22}{name={A22}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A33}{name={A33}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A44}{name={A44}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A55}{name={A55}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A66}{name={A66}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A77}{name={A77}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A88}{name={A88}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A99}{name={A99}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A111}{name={A111}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A222}{name={A222}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A333}{name={A333}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A444}{name={A444}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A555}{name={A555}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A666}{name={A666}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A777}{name={A777}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A888}{name={A888}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A999}{name={A999}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A1111}{name={A1111}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A2222}{name={A2222}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A3333}{name={A3333}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A4444}{name={A4444}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A5555}{name={A5555}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A6666}{name={A6666}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A7777}{name={A7777}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A8888}{name={A8888}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A9999}{name={A9999}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A}{name={A}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A1}{name={A1}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A2}{name={A2}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A3}{name={A3}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A4}{name={A4}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A5}{name={A5}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A6}{name={A6}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A7}{name={A7}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A8}{name={A8}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A9}{name={A9}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A1111111}{name={A1111111}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A2222222}{name={A2222222}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A3333333}{name={A3333333}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A4444444}{name={A4444444}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A5555555}{name={A5555555}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A6666666}{name={A6666666}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A7777777}{name={A7777777}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A8888888}{name={A8888888}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A9999999}{name={A9999999}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A11111111}{name={A11111111}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A22222222}{name={A22222222}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A33333333}{name={A33333333}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A44444444}{name={A44444444}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A55555555}{name={A55555555}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A66666666}{name={A66666666}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A77777777}{name={A77777777}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A88888888}{name={A88888888}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A99999999}{name={A99999999}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A111111111}{name={A111111111}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A222222222}{name={A222222222}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A333333333}{name={A333333333}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A444444444}{name={A444444444}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A555555555}{name={A555555555}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A666666666}{name={A666666666}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A777777777}{name={A777777777}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A888888888}{name={A888888888}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A999999999}{name={A999999999}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A11111111}{name={A11111111}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A22222222}{name={A22222222}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A33333333}{name={A33333333}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A44444444}{name={A44444444}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A55555555}{name={A55555555}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A66666666}{name={A66666666}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A77777777}{name={A77777777}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A88888888}{name={A88888888}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A99999999}{name={A99999999}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A111111111}{name={A111111111}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A222222222}{name={A222222222}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A333333333}{name={A333333333}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A444444444}{name={A444444444}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A555555555}{name={A555555555}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A666666666}{name={A666666666}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A777777777}{name={A777777777}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A888888888}{name={A888888888}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A999999999}{name={A999999999}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A1111111111}{name={A1111111111}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A2222222222}{name={A2222222222}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A3333333333}{name={A3333333333}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A4444444444}{name={A4444444444}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A5555555555}{name={A5555555555}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A6666666666}{name={A6666666666}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A7777777777}{name={A7777777777}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A8888888888}{name={A8888888888}, description={Area of a circle}, type=rl}
+% \newglossaryentry{A9999999999}{name={A9999999999}, description={Area of a circle}, type=rl}
+
+
+% \begin{notation}
+
+\newacronymentry{GFRP}{GFRP}{Glass-fiber reinforced polymer}
+\newacronymentry{CFRP}{CFRP}{Carbon-fiber reinforced polymer}
+\newacronymentry{FEM}{FEM}{Finite element modeling}
+\newacronymentry{ATD}{ATD}{Anthropomorphic test device}
+\newacronymentry{SEA}{SEA}{Specific energy absorption}
+\newacronymentry{LR}{LR}{Load ratio}
+\newacronymentry{LHS}{LHS}{Latin hypercube sampling}
+\newacronymentry{MARS}{MARS}{Multivariate adaptive regression splines}
+\newacronymentry{MLS}{MLS}{Moving least squares}
+\newacronymentry{EA}{EA}{Evolutionary algorithm, energy absorber}
+\newacronymentry{MOGA}{MOGA}{Multi objective genetic algorithm}
+\newacronymentry{FEA}{FEA}{Finite element analysis}
+\newacronymentry{HPC}{HPC}{High performance computing (cluster)}
+\newacronymentry{RMSE}{RMSE}{Root mean squared error}
+\newacronymentry{SAE}{SAE}{Society of Automotive Engineers}
+\newacronymentry{CFC}{CFC}{Channel frequency class}
+\newacronymentry{SI}{SI}{Severity index}
+\newacronymentry{HIC}{HIC}{Head injury criterion}
+\newacronymentry{HEA}{HEA}{Hybrid energy absorber}
+\newacronymentry{PEEK}{PEEK}{Polyether ether ketone}
+
+\newglossaryentry{velocity1}{name={\ensuremath{V_{\mathrm{x}}}}, description={Horizontal velocity}, type=rl}
+\newglossaryentry{velocity3}{name={\ensuremath{v_{\mathrm{t}}}}, description={Tangential velocity}, type=rl}
+\newglossaryentry{velocity2}{name={\ensuremath{V_{\mathrm{z}}}}, description={Vertical velocity}, type=rl}
+\newglossaryentry{delta}{name={\ensuremath{\delta}}, description={Crushing length}, type=gl}
+\newglossaryentry{deltam}{name={\ensuremath{\delta_{\mathrm{m}}}}, description={Crush stroke}, type=gl}
+\newglossaryentry{force}{name={\ensuremath{F}}, description={Crushing force}, type=rl}
+\newglossaryentry{m}{name={\ensuremath{m}}, description={Mass}, type=rl}
+\newglossaryentry{Ea}{name={\ensuremath{E_{\mathrm{a}}}}, description={Absorbed energy}, type=rl}
+\newglossaryentry{Ppeak}{name={\ensuremath{P_{\mathrm{peak}}}}, description={Peak force}, type=rl}
+\newglossaryentry{Pm}{name={\ensuremath{P_{\mathrm{m}}}}, description={Mean load}, type=rl}
+\newglossaryentry{Ek}{name={\ensuremath{E_{\mathrm{k}}}}, description={Kinetic energy}, type=rl}
+\newglossaryentry{a}{name={\ensuremath{a}}, description={Acceleration}, type=rl}
+\newglossaryentry{ste}{name={\ensuremath{St_{\mathrm{e}}}}, description={Stroke efficiency}, type=rl}
+\newglossaryentry{L}{name={\ensuremath{L}}, description={Tube length}, type=rl}
+\newglossaryentry{C}{name={\ensuremath{C}}, description={Tube edge length; strain-rate dependency modifier in Johnson-Cook plasticity model}, type=rl}
+\newglossaryentry{h}{name={\ensuremath{h}}, description={Wall thickness}, type=rl}
+\newglossaryentry{H}{name={\ensuremath{H}}, description={Half height of folding mechanism}, type=rl}
+\newglossaryentry{w}{name={\ensuremath{W}}, description={Work; energy}, type=rl}
+\newglossaryentry{mp}{name={\ensuremath{M_{\mathrm{p}}}}, description={Plastic bending moment}, type=rl}
+\newglossaryentry{n0}{name={\ensuremath{N_0}}, description={Axial membrane force}, type=rl}
+\newglossaryentry{theta}{name={\ensuremath{\theta}}, description={Meridional coordinate}, type=gl}
+\newglossaryentry{phi}{name={\ensuremath{\phi}}, description={Circumferential coordinate}, type=gl}
+\newglossaryentry{sigma0}{name={\ensuremath{\sigma_0}}, description={Plastic stress}, type=gl}
+\newglossaryentry{vareps_phi}{name={\ensuremath{\dot{\varepsilon}_{\phi}}}, description={Circumferential strain}, type=gl}
+\newglossaryentry{vt}{name={\ensuremath{v_{\mathrm{t}}}}, description={Tangential velocity}, type=rl}
+\newglossaryentry{wext}{name={\ensuremath{\dot{W}}}, description={Energy dissipation rate}, type=rl}
+\newglossaryentry{psi0}{name={\ensuremath{\psi_0}}, description={Half angle between adjacent tube plates}, type=gl}
+\newglossaryentry{eta}{name={\ensuremath{\eta}}, description={Structural effectiveness}, type=gl}
+\newglossaryentry{an}{name={\ensuremath{A_{\mathrm{N}}}}, description={Net cross-sectional area}, type=rl}
+\newglossaryentry{ae}{name={\ensuremath{A_{\mathrm{E}}}}, description={Area enclosed by cross-section}, type=rl}
+\newglossaryentry{vareps}{name={\ensuremath{\dot{\varepsilon}}}, description={Strain rate}, type=gl}
+\newglossaryentry{vareps2}{name={\ensuremath{\dot{\varepsilon}_0}}, description={Reference strain rate}, type=gl}
+\newglossaryentry{vareps3}{name={\ensuremath{{\varepsilon}}}, description={True strain; stationary error (Kriging)}, type=gl}
+\newglossaryentry{rho}{name={\ensuremath{\rho}}, description={Density}, type=gl}
+\newglossaryentry{nu1}{name={\ensuremath{\nu}}, description={Elastic Poisson's ratio}, type=gl}
+\newglossaryentry{nu2}{name={\ensuremath{\nu^{\mathrm{p}}}}, description={Plastic Poisson's ratio}, type=gl}
+\newglossaryentry{sigma2}{name={\ensuremath{\bm{\sigma}}}, description={Cauchy stress tensor}, type=gl}
+\newglossaryentry{D}{name={\ensuremath{D}}, description={Cowper-Symonds model parameter}, type=rl}
+\newglossaryentry{q}{name={\ensuremath{q}}, description={Cowper-Symonds model parameter}, type=rl}
+% \newglossaryentry{M}{name={\ensuremath{\mathrm{\mathbf{M}}}}, description={Mass matrix}, type=rl}
+\newglossaryentry{a2}{name={\ensuremath{\mathrm{\mathbf{a}}}}, description={Nodal accelerations}, type=rl}
+\newglossaryentry{a3}{name={\ensuremath{a_{\mathrm{h}}}}, description={Acceleration at head's center of gravity}, type=rl}
+\newglossaryentry{f1}{name={\ensuremath{\mathrm{\mathbf{f}}}}, description={Nodal forces}, type=rl}
+\newglossaryentry{v1}{name={\ensuremath{\mathrm{\mathbf{v}}}}, description={Nodal velocities}, type=rl}
+\newglossaryentry{fext}{name={\ensuremath{\mathrm{\mathbf{f}^{ext}}}}, description={External forces}, type=rl}
+\newglossaryentry{fint}{name={\ensuremath{\mathrm{\mathbf{f}^{int}}}}, description={Internal material forces}, type=rl}
+\newglossaryentry{ddd}{name={\ensuremath{\mathrm{\mathbf{d}}}}, description={Nodal displacements}, type=rl}
+\newglossaryentry{ttt}{name={\ensuremath{t}}, description={Time; thickness}, type=rl}
+\newglossaryentry{nc}{name={\ensuremath{n_{\mathrm{C}}}}, description={Number of boundary conditions}, type=rl}
+\newglossaryentry{nc2}{name={\ensuremath{N_{\mathrm{c}}}}, description={Number of chromosomes}, type=rl}
+\newglossaryentry{g}{name={\ensuremath{g}}, description={Boundary condition}, type=rl}
+\newglossaryentry{deltatcrit}{name={\ensuremath{\Delta t^{\mathrm{crit}}}}, description={Critical time increment}, type=rl}
+\newglossaryentry{s}{name={\ensuremath{s}}, description={Engineering stress}, type=rl}
+\newglossaryentry{p1}{name={\ensuremath{p}}, description={Equivalent plastic strain}, type=rl}
+\newglossaryentry{p2}{name={\ensuremath{\dot{p}}}, description={Equivalent plastic strain rate}, type=rl}
+\newglossaryentry{p3}{name={\ensuremath{\dot{p}_0}}, description={Reference equivalent plastic strain rate}, type=rl}
+\newglossaryentry{xs}{name={\ensuremath{\mathbf{X}_{\mathrm{s}}}}, description={Sampling matrix}, type=rl}
+\newglossaryentry{omegas}{name={\ensuremath{\Omega_{\mathrm{s}}}}, description={Sampling input dimension}, type=gl}
+\newglossaryentry{x3}{name={\ensuremath{\mathbf{x}}}, description={Design variable vector}, type=rl}
+\newglossaryentry{omega3}{name={\ensuremath{\omega_h}}, description={Weight for MLS residuals}, type=gl}
+\newglossaryentry{sigmau}{name={\ensuremath{\sigma_{\mathrm{u}}}}, description={Ultimate stress}, type=gl}
+\newglossaryentry{sigmau2}{name={\ensuremath{\varepsilon_{\mathrm{u}}}}, description={Failure strain}, type=gl}
+\newglossaryentry{hj}{name={\ensuremath{h_j}}, description={Equality constraint}, type=rl}
+\newglossaryentry{gk}{name={\ensuremath{g_k}}, description={Inequality constraint}, type=rl}
+\newglossaryentry{Ns}{name={\ensuremath{N_{\mathrm{s}}}}, description={Number of sampling points}, type=rl}
+\newglossaryentry{M}{name={\ensuremath{M}}, description={Maximum MARS base functions}, type=rl}
+\newglossaryentry{am}{name={\ensuremath{a_{m}}}, description={Coefficient of MARS base function}, type=rl}
+\newglossaryentry{cm}{name={\ensuremath{c_{m}}}, description={Coefficient of MLS base function}, type=rl}
+\newglossaryentry{bm}{name={\ensuremath{B_{m}}}, description={Base function (MARS and MLS)}, type=rl}
+\newglossaryentry{fi}{name={\ensuremath{f_i}}, description={Original functions}, type=rl}
+\newglossaryentry{fi2}{name={\ensuremath{\hat{f}_i}}, description={Surrogate functions}, type=rl}
+\newglossaryentry{k}{name={\ensuremath{k}}, description={MARS subsets}, type=rl}
+% \newglossaryentry{g}{name={\ensuremath{\bm{g}}}, description={Vector of basis functions (Kriging)}, type=rl}
+\newglossaryentry{r}{name={\ensuremath{r}}, description={Stationary autocorrelation function}, type=rl}
+\newglossaryentry{R2}{name={\ensuremath{R^2}}, description={Goodness of fit}, type=rl}
+\newglossaryentry{E}{name={\ensuremath{E}}, description={Elastic modulus}, type=rl}
+\newglossaryentry{beta}{name={\ensuremath{\bm{\beta}}}, description={Vector with the least square estimates}, type=gl}
+\newglossaryentry{sigma}{name={\ensuremath{\sigma^2}}, description={Variance}, type=gl}
+\newglossaryentry{pi}{name={\ensuremath{\Pi}}, description={Pareto front space}, type=gl}
+\newglossaryentry{upsilon}{name={\ensuremath{\Upsilon}}, description={Mapping for root mean square error}, type=gl}
+\newglossaryentry{xi}{name={\ensuremath{\xi}}, description={Error in cross-validation process}, type=gl}
+\newglossaryentry{sigmay}{name={\ensuremath{\sigma_y^0}}, description={Yield stress}, type=gl}
+\newglossaryentry{Aa}{name={\ensuremath{A}}, description={Yield stress in Johnson-Cook plasticity model}, type=rl}
+\newglossaryentry{Bb}{name={\ensuremath{B}}, description={Hardening law ampitude modifier in Johnson-Cook plasticity model}, type=rl}
+\newglossaryentry{Pp}{name={\ensuremath{P}}, description={Hardening law shape modifier in Johnson-Cook plasticity model}, type=rl}
+\newglossaryentry{Qq}{name={\ensuremath{Q}}, description={Temperature dependency modifier in Johnson-Cook plasticity model}, type=rl}
+
+% \end{notation}
+% \newacronymentry{GFRP}{GFRP}{glass-fiber reinforced polymer}
+% \newacronymentry{PET}{PET}{polyethylene terephthalate}
+% \newacronymentry{CFRP}{CFRP}{carbon-fiber reinforced polymer}
+% \newacronymentry{DDQ}{DDQ}{deep drawing quality}
+% \newacronymentry{HIC}{HIC}{head injury criterion}
+% \newacronymentry{LR}{LR}{load ratio}
+% \newacronymentry{GP}{GP}{Gaussian process}
+% \newacronymentry{MARS}{MARS}{multivariate adaptive regression splines}
+% \newacronymentry{PLC}{PLC}{Portevin-Le Chatelier}
+% \newacronymentry{SEM}{SEM}{scanning electron microscope}
+% \newacronymentry{SBGO}{SBGO}{surrogate-based global optimization}
+% \newacronymentry{SAE}{SAE}{Society of Automotive Engineers}
+% \newacronymentry{LHS}{LHS}{Latin hypercube sampling}
+% \newacronymentry{CFE}{CFE}{crush force efficiency}
+% \newacronymentry{SEA}{SEA}{specific energy absorption}
+% \newacronymentry{ASTM}{ASTM}{American Society for Testing Materials}
+% \newacronymentry{FE}{FE}{finite element}
+% \newacronymentry{PVC}{PVC}{polyvinyl chloride}
+% \newacronymentry{SHPB}{SHPB}{Split-Hopkinson pressure bar}
+% \newacronymentry{DIC}{DIC}{digital image correlation}
+% \newacronymentry{PET}{PET}{polyethylene terephthalate}
+% \newacronymentry{FE}{FE}{finite element}
+% \newacronymentry{LVDT}{LVDT}{linear variable differential transformer}
+
+
+% \newglossaryentry{alpha}{name={\ensuremath{\alpha}}, sort={aaa}, description={Courant number, step length in a conjugate-gradient method, shape factor for Deshpande model, interaction parameter (Hanssen's formula)}, type=gl}
+% \newglossaryentry{beta}{name={\ensuremath{\beta}}, sort={aab}, description={Parameter for the flow potential of Deshpande model, vector of least-squares estimates in a Gaussian process, interaction parameter (Hanssen's formula)}, type=gl}
+% \newglossaryentry{delta}{name={\ensuremath{\delta}}, sort={aad}, description={Axial crushing distance}, type=gl}
+% \newglossaryentry{deltamax}{name={${\delta_{\text{max}}}$}, sort={aaf}, description={Bottoming-out length (maximum crushing distance)}, type=gl}
+% \newglossaryentry{deltae}{name={\ensuremath{\delta_{\text{e}}}}, sort={aae}, description={Effective crushing length of a lobe in a collapse mechanism}, type=gl}
+% \newglossaryentry{strain}{name={\ensuremath{\varepsilon}}, sort={aag}, description={True strain, stationary error model}, type=gl}
+% \newglossaryentry{strainteta}{name={\ensuremath{\varepsilon_{\theta}}}, sort={aah}, description={Circumferential strain}, type=gl}
+% \newglossaryentry{levicivita}{name={\ensuremath{\epsilon}}, sort={aao}, description={Levi-Civita symbol}, type=gl}
+% \newglossaryentry{tol}{name={\ensuremath{\varepsilon_{\text{tol}}}}, sort={aaj}, description={Tolerance}, type=gl}
+% \newglossaryentry{sr}{name={\ensuremath{\dot{\varepsilon}}}, sort={aam}, description={Strain rate}, type=gl}
+% \newglossaryentry{pmult}{name={\ensuremath{\dot{\lambda}}}, sort={aar}, description={Plastic multiplier}, type=gl}
+% \newglossaryentry{lame1}{name={\ensuremath{\hat{\lambda}}}, sort={aas sort={aa},}, description={Effective Lamé's constant}, type=gl}
+% \newglossaryentry{lame2}{name={\ensuremath{\hat{\mu}}}, sort={aat}, description={Effective Lamé's constant}, type=gl}
+% \newglossaryentry{nup}{name={\ensuremath{\nu^{\text{p}}}}, sort={aatc}, description={Plastic Poisson's ratio}, type=gl}
+% \newglossaryentry{etac}{name={\ensuremath{\eta_{\text{c}}}}, sort={aap}, description={Structural effectiveness}, type=gl}
+\newglossaryentry{solratio}{name={\ensuremath{\phi}}, sort={abl}, description={Solidity ratio}, type=gl}
+% \newglossaryentry{nu}{name={\ensuremath{\nu}}, sort={aatb}, description={Elastic Poisson's ratio}, type=gl}
+% \newglossaryentry{rho}{name={\ensuremath{\rho}}, sort={aaw}, description={Density}, type=gl}
+% \newglossaryentry{srcero}{name={\ensuremath{{\dot{\varepsilon}_0}}}, sort={aan}, description={Reference strain rate}, type=gl}
+% \newglossaryentry{triax}{name={\ensuremath{\sigma^*}}, sort={abd}, description={Stress triaxiality ratio}, type=gl}
+% \newglossaryentry{sigma2}{name={\ensuremath{\sigma^2}}, sort={abe}, description={Variance}, type=gl}
+% \newglossaryentry{yhc}{name={\ensuremath{\sigma^{0}_{\text{C}}}}, sort={abf}, description={Initial yield stress in uniaxial compression}, type=gl}
+\newglossaryentry{yhc}{name={\ensuremath{\sigma^{0}_{\text{H}}}}, sort={abf}, description={Initial yield stress in hydrostatic compression}, type=gl}
+% \newglossaryentry{yht}{name={\ensuremath{\sigma^{\text{T}}_{\text{H}}}}, sort={abg}, description={Yield stress in hydrostatic tension}, type=gl}
+% \newglossaryentry{strainD}{name={\ensuremath{\varepsilon_{\text{D}}}}, sort={aai}, description={Ultimate strain for damage model}, type=gl}
+% \newglossaryentry{strainU}{name={\ensuremath{\varepsilon_{\text{u}}}}, sort={aak}, description={Ultimate tensile strain}, type=gl}
+% \newglossaryentry{sigma}{name={\ensuremath{\sigma}}, sort={aax}, description={True stress, auto-covariance function}, type=gl}
+% \newglossaryentry{theta}{name={\ensuremath{\theta}}, sort={aaq}, description={Angle of a plastic hinge, correlation parameter for GP model}, type=gl}
+% \newglossaryentry{Omega}{name={\ensuremath{\Omega}}, sort={abn}, description={Cross-sectional area enclosed by the middle line of the cross section, number of input dimensions for GP model}, type=gl}
+% \newglossaryentry{gamma}{name={\ensuremath{\gamma}}, sort={aac}, description={Gaussian correlation function}, type=gl}
+% \newglossaryentry{sigmaU}{name={\ensuremath{\sigma_{\text{u}}}}, sort={abb}, description={Ultimate stress}, type=gl}
+\newglossaryentry{mises}{name={\ensuremath{\sigma_{\text{eq}}}}, sort={aay}, description={Von Mises stress}, type=gl}
+% \newglossaryentry{sigmay}{name={\ensuremath{\sigma_{\text{y}}}}, sort={abc}, description={Yield stress (sometimes $\sigma_0$)}, type=gl}
+% \newglossaryentry{sigmaf}{name={\ensuremath{\sigma_{\text{f}}}}, sort={aaz}, description={Foam yield stress (Hanssen's formula)}, type=gl}
+% \newglossaryentry{sigmay0}{name={\ensuremath{\sigma_{\text{y}}^{\text{0}}}}, sort={abh}, description={Initial yield stress}, type=gl}
+\newglossaryentry{sigmaH}{name={\ensuremath{\sigma_{\text{H}}}}, sort={aba}, description={Hydrostatic stress}, type=gl}
+% \newglossaryentry{green}{name={\ensuremath{{\mathbf{\sigma}}^{\nabla \mathrm{G}}}}, sort={abj}, description={Green-Naghdi stress rate}, type=gl}
+% \newglossaryentry{cauchy}{name={\ensuremath{{\mathbf{\sigma}}}}, sort={abi}, description={Cauchy stress tensor}, type=gl}
+% \newglossaryentry{dev}{name={\ensuremath{{\mathbf{\sigma}'}}}, sort={abk}, description={Deviatoric stress tensor}, type=gl}
+% \newglossaryentry{jones}{name={\ensuremath{\psi}}, sort={abm}, description={Energy-absorbing effectiveness factor}, type=gl}
+% \newglossaryentry{strainplas}{name={\ensuremath{\varepsilon^{\text{p}}}}, sort={aal}, description={Plastic strain}, type=gl}
+
+
+
+
+% \newglossaryentry{psrcero}{name={\ensuremath{{\dot{p}_0}}}, sort={di}, description={Reference equivalent plastic strain rate}, type=rl}
+% \newglossaryentry{pD}{name={\ensuremath{p_{\text{D}}}}, sort={dg}, description={Ultimate equivalent plastic strain}, type=rl}
+% \newglossaryentry{h}{name={\ensuremath{h}}, sort={ce}, description={Half-lobe length in collapse mechanism, element size, wall thickness (Hanssen's formula)}, type=rl}
+% \newglossaryentry{E}{name={\ensuremath{E}}, sort={bn}, description={Young's modulus}, type=rl}
+% \newglossaryentry{Ppeak}{name={\ensuremath{P_{\text{peak}}}}, sort={de}, description={Initial peak crushing force}, type=rl}
+% \newglossaryentry{MD}{name={\ensuremath{M^{\text{D}}}}, sort={ct}, description={Generic diagonal matrix}, type=rl}
+% \newglossaryentry{MC}{name={\ensuremath{M^{\text{C}}}}, sort={cs}, description={Generic consistent matrix}, type=rl}
+\newglossaryentry{M0}{name={\ensuremath{M_{0}}}, sort={cq}, description={Pure bending moment}, type=rl}
+% \newglossaryentry{cd}{name={\ensuremath{c_{\text{d}}}}, sort={bi}, description={Stress wave speed}, type=rl}
+% \newglossaryentry{s}{name={\ensuremath{s}}, sort={dq}, description={Engineering stress}, type=rl}
+% \newglossaryentry{m}{name={\ensuremath{m}}, sort={cu}, description={Mass}, type=rl}
+% \newglossaryentry{F}{name={\ensuremath{F}}, sort={bq}, description={Crushing force}, type=rl}
+
+% \newglossaryentry{S}{name={\ensuremath{S}}, sort={do}, description={Total perimeter of the cross section}, type=rl}
+% \newglossaryentry{tE}{name={\ensuremath{t_{\text{E}}}}, sort={dt}, description={Total simulation time}, type=rl}
+% \newglossaryentry{nTI}{name={\ensuremath{n_{\text{T}I}}}, sort={dc}, description={Total number of increments}, type=rl}
+% \newglossaryentry{e}{name={\ensuremath{e}}, sort={bp}, description={Engineering strain}, type=rl}
+% \newglossaryentry{I}{name={\ensuremath{{\mathbf{I}}}}, sort={cg}, description={Identity tensor}, type=rl}
+% \newglossaryentry{MM}{name={\ensuremath{{\mathbf{M}}}}, sort={cw}, description={Mass matrix}, type=rl}
+% \newglossaryentry{nc}{name={\ensuremath{n_{\text{c}}}}, sort={db}, description={Number of boundary conditions}, type=rl}
+% \newglossaryentry{gI}{name={\ensuremath{g_{\text{I}}}}, sort={cc}, description={Boundary conditions}, type=rl}
+% \newglossaryentry{D}{name={\ensuremath{{\mathbf{D}}}}, sort={bk}, description={Strain rate tensor}, type=rl}
+% \newglossaryentry{De}{name={\ensuremath{{\mathbf{D}^{\text{e}}}}}, sort={bl}, description={Elastic part of the strain rate tensor}, type=rl}
+% \newglossaryentry{Dp}{name={\ensuremath{{\mathbf{D}^{\text{p}}}}}, sort={bm}, description={Plastic part of the strain rate tensor}, type=rl}
+% \newglossaryentry{G}{name={\ensuremath{G}}, sort={cb}, description={Shear modulus}, type=rl}
+% \newglossaryentry{Isigma}{name={\ensuremath{I_{\sigma}}}, sort={cf}, description={First stress invariant}, type=rl}
+% \newglossaryentry{f}{name={\ensuremath{f}}, sort={bt}, description={Yield criterion, mass-scaling factor, generic objective function, flange width}, type=rl}
+% \newglossaryentry{xm}{name={\ensuremath{x_{\text{m}}}}, sort={ed}, description={Half-lobe length in Abramowicz and Jones model}, type=rl}
+% \newglossaryentry{Cavg}{name={\ensuremath{C_{\text{avg}}}}, sort={bh}, description={Main interaction parameter (Hanssen's formula)}, type=rl}
+% \newglossaryentry{Favg}{name={\ensuremath{F_{\text{avg}}}}, sort={br}, description={Average crushing force}, type=rl}
+% \newglossaryentry{Favg0}{name={\ensuremath{F_{\text{avg}}^{0}}}, sort={br2}, description={Average crushing force of an empty extrusion (Hanssen's formula)}, type=rl}
+% \newglossaryentry{p}{name={\ensuremath{p}}, sort={df}, description={Equivalent plastic strain}, type=rl}
+% \newglossaryentry{pdot}{name={\ensuremath{\dot{p}}}, sort={dh}, description={Equivalent plastic strain rate}, type=rl}
+% \newglossaryentry{hatf}{name={\ensuremath{\hat{f}}}, sort={bu}, description={Metamodel of the function $f$}, type=rl}
+% \newglossaryentry{snegra}{name={\ensuremath{\mathbf{s}}}, sort={dr}, description={Search direction for a conjugate-gradient method}, type=rl}
+% \newglossaryentry{ggorda}{name={\ensuremath{\mathbf{g}}}, sort={cd}, description={Vector of basis functions in a Gaussian process}, type=rl}
+% \newglossaryentry{xgorda}{name={\ensuremath{\mathbf{x}}}, sort={ee}, description={Generic variables vector}, type=rl}
+% \newglossaryentry{N}{name={\ensuremath{N}}, sort={cx}, description={Number of contributing flanges in a multi-cell cross section, number of variables for LH sampling}, type=rl}
+% \newglossaryentry{M}{name={\ensuremath{M}}, sort={cp}, description={Number of divisions of the design space for LHS}, type=rl}
+% \newglossaryentry{hatff}{name={\ensuremath{\hat{\mathbf{f}}}}, sort={bx}, description={Values of the metamodel of the function \emph{f}}, type=rl}
+% \newglossaryentry{ffdamp}{name={\ensuremath{\mathbf{f}^{\text{damp}}}}, sort={by}, description={Viscous forces}, type=rl}
+% \newglossaryentry{ffext}{name={\ensuremath{\mathbf{f}^{\text{ext}}}}, sort={bz}, description={External nodal forces}, type=rl}
+% \newglossaryentry{ffint}{name={\ensuremath{\mathbf{f}^{\text{int}}}}, sort={ca}, description={Internal nodal forces}, type=rl}
+% \newglossaryentry{ff}{name={\ensuremath{\mathbf{f}}}, sort={cw}, description={Nodal unbalanced forces, values of the function \emph{f} obtained from FE sampling}, type=rl}
+% \newglossaryentry{CC}{name={\ensuremath{\mathbf{C}^{\text{damp}}}}, sort={bj}, description={Matrix of damping coefficients}, type=rl}
+% \newglossaryentry{vv}{name={\ensuremath{\mathbf{v}}}, sort={dx}, description={Nodal velocities}, type=rl}
+% \newglossaryentry{uu}{name={\ensuremath{\mathbf{u}}}, sort={dv}, description={Nodal displacements}, type=rl}
+% \newglossaryentry{aa}{name={\ensuremath{\mathbf{a}}}, sort={bd}, description={Nodal accelerations}, type=rl}
+% \newglossaryentry{R2}{name={\ensuremath{R^2}}, sort={de}, description={Correlation coefficient}, type=rl}
+% \newglossaryentry{A}{name={\ensuremath{A}}, sort={ba}, description={Cross-sectional area, initial yield strength in Johnson-Cook model, parameter for the pressure fit in triaxial tests, shape parameter for Deshpande model}, type=rl}
+% \newglossaryentry{P}{name={\ensuremath{P}}, sort={dc2}, description={Vertical pressure in triaxial tests}, type=rl}
+% \newglossaryentry{B}{name={\ensuremath{B}}, sort={be}, description={Isotropic hardening parameter in Johnson-Cook model, MARS power basis function, parameter for the pressure fit in triaxial tests, shape parameter for Deshpande model}, type=rl}
+% \newglossaryentry{Mb}{name={\ensuremath{M_{\text{b}}}}, sort={cr}, description={Number of MARS basis functions}, type=rl}
+% \newglossaryentry{FV}{name={\ensuremath{F_{\text{V}}}}, sort={bs}, description={Vertical load in triaxial test}, type=rl}
+% \newglossaryentry{r}{name={\ensuremath{r}}, sort={dm}, description={Stationary autocorrelation function for GP model}, type=rl}
+% \newglossaryentry{V}{name={\ensuremath{V}}, sort={dw}, description={Volume}, type=rl}
+% \newglossaryentry{w}{name={\ensuremath{w}}, sort={ec}, description={Weight for the weighted model of multi-objective optimization}, type=rl}
+\newglossaryentry{Wext}{name={\ensuremath{W_{\text{ext}}}}, sort={dz}, description={External work}, type=rl}
+% \newglossaryentry{W}{name={\ensuremath{W}}, sort={dy}, description={Work or energy}, type=rl}
+\newglossaryentry{Wint}{name={\ensuremath{W_{\text{int}}}}, sort={ea}, description={Internal energy}, type=rl}
+\newglossaryentry{Wkin}{name={\ensuremath{W_{\text{kin}}}}, sort={eb}, description={Kinetic energy}, type=rl}
+% \newglossaryentry{fprimagorro}{name={\ensuremath{\hat{f}'}}, sort={bv}, description={Mono-objective optimization function}, type=rl}
+% \newglossaryentry{am}{name={\ensuremath{a}}, sort={bc}, description={Coefficient of the MARS power basis functions}, type=rl}
+% \newglossaryentry{L}{name={\ensuremath{L}}, sort={cm}, description={Component length, correlation length for GP}, type=rl}
+% \newglossaryentry{Lmin}{name={\ensuremath{L_{\text{min}}}}, sort={co}, description={Smallest element dimension in a finite element model}, type=rl}
+% \newglossaryentry{deltatcrit}{name={\ensuremath{\Delta t^{\text{crit}}}}, sort={du}, description={Critical time increment in an explicit analysis}, type=rl}
+% \newglossaryentry{Le}{name={\ensuremath{L_{\text{e}}}}, sort={cn}, description={Effective crushing length, characteristic element length}, type=rl}
+% \newglossaryentry{n}{name={\ensuremath{n}}, sort={da}, description={Isotropic hardening parameter in Johnson-Cook model, parameter for Cowper--Symonds overstress power law}, type=rl}
+% \newglossaryentry{Dnormal}{name={\ensuremath{D}}, sort={bj2}, description={Diameter, parameter for Cowper--Symonds overstress power law, parameter for the membrane deformability in triaxial tests}, type=rl}
+% \newglossaryentry{R}{name={\ensuremath{R}}, sort={dk}, description={Radius, isotropic hardening function, stress ratio for Cowper--Symonds overstress power law, anisotropy ratio}, type=rl}
+% \newglossaryentry{kc}{name={\ensuremath{k_{\text{c}}}}, sort={ck}, description={Parameter for Deshpande model}, type=rl}
+% \newglossaryentry{k}{name={\ensuremath{k}}, sort={cj}, description={Parameter for Deshpande model}, type=rl}
+% \newglossaryentry{kt}{name={\ensuremath{k_{\text{t}}}}, sort={cl}, description={Parameter for Deshpande model}, type=rl}
+% \newglossaryentry{g}{name={\ensuremath{g}}, sort={cb2}, description={Flow potential}, type=rl}
+% \newglossaryentry{t}{name={\ensuremath{t}}, sort={ds}, description={Thickness, time}, type=rl}
+% \newglossaryentry{J3}{name={\ensuremath{J_3}}, sort={ci}, description={Third stress invariant}, type=rl}
+% \newglossaryentry{J2}{name={\ensuremath{J_2}}, sort={ch}, description={Second stress invariant}, type=rl}
+% \newglossaryentry{Np}{name={\ensuremath{N_{\text{p}}}}, sort={cy}, description={Size of the data set for the correlation coefficient $R^2$}, type=rl}
+% \newglossaryentry{NV}{name={\ensuremath{N_{\text{V}}}}, sort={cz}, description={Number of terms for a Voce law}, type=rl}
+% \newglossaryentry{C}{name={\ensuremath{C}}, sort={bg}, description={Viscosity exponent, parameter for the membrane deformability fit in triaxial tests}, type=rl}
+% \newglossaryentry{b}{name={\ensuremath{b}}, sort={bf}, description={Side length in square section, parameter for Voce model, outer diameter (Hanssen's formula)}, type=rl}
+% \newglossaryentry{Q}{name={\ensuremath{Q}}, sort={dj}, description={Parameter for Voce model (saturation hardening stress)}, type=rl}
+% \newglossaryentry{areaesp}{name={\ensuremath{A_{\text{f}}}}, sort={bb}, description={Foam cross-sectional area (Hanssen's formula)}, type=rl}
+% \newglossaryentry{Ea}{name={\ensuremath{E_\text{a}}}, sort={bo}, description={Absorbed energy}, type=rl}
+% \newglossaryentry{Pm}{name={\ensuremath{P_\text{m}}}, sort={dd}, description={Mean crushing force}, type=rl}
+% \newglossaryentry{Se}{name={\ensuremath{S_\text{E}}}, sort={dp}, description={Stroke efficiency}, type=rl}
+
+
+\begin{dedication}
+This is the dedication.
+\end{dedication}
+
+\begin{preface}
+This dissertation has been submitted for the degree of \emph{doctor ingeniero de caminos, canales y puertos} (doctor of philosophy in civil engineering) at Universidade da Coruña. The research described herein was conducted under the supervision of Professor Luis E. Romera Rodríguez and Professor Jacobo Díaz García, at the Group of Structural Mechanics, Department of Construction Technology, between October 2011 and November 2015.
+
+This work is original to the best of the author's knowledge, except where acknowledgments and references are made to previous research. Several original publications have been hitherto derived from this thesis, and a patent has been granted.
+
+\blindtext[15]
+
+Despite concise proofreading and corrections, this book may still contain errors. Attentive readers are encouraged to report them to the author.\\[100pt]
+
+\begin{minipage}[t]{\textwidth}
+\raggedleft
+Miguel Costas Piñó\\
+November 17, 2015
+\end{minipage}
+
+\end{preface}
+
+\begin{acknowledgements}
+This is the acknowledgements section.
+\blindtext[15]
+\end{acknowledgements}
+
+
+
+\begin{abstracten}
+This is the abstract in English. It is required in a PhD. thesis, but it is optional in a MSc. thesis or in a \emph{Proyecto técnico}, unless they are written in English.
+
+\blindtext[25]
+\end{abstracten}
+
+\begin{abstractes}
+Este es el resumen en castellano. Es obligatorio en una tesis doctoral, y también en un trabajo fin de máster o en un proyecto técnico si están escritos en castellano.
+\blindtext[25]
+\end{abstractes}
+
+\begin{abstractga}
+Este é o resumo en galego. É obligatorio nunha tesis doctoral e tamén nun traballo fin de máster ou nun proxecto técnico se están escritos en galego.
+\blindtext[35]
+\end{abstractga}
+
+% -----------------------------------------------------------------------------
+\begin{document}
+% -----------------------------------------------------------------------------
+
+\chapter{This is a chapter with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+\epigraph{This is an epigraph. It is an optional phrase or quotation written at the beginning of a chapter.}{Epigraph author \\\textit{Epigraph source} (Date)}
+
+\section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+\subsection{This is a subsection}
+\subsection{This is a subsection}
+
+\section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+% \section{This is a section with a very, very, very, very, very, very, very, very, very, very, very, very, very, very, very long title.}
+
+% \subsection{This is a subsection}
+% \subsection{This is a subsection}
+
+\begin{figure}[htpb]
+  \centering
+  \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+  \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+  \label{fig:geometrias}
+\end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+% \begin{figure}[htpb]
+%   \centering
+%   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+%   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+%   \label{fig:geometrias}
+% \end{figure}
+
+
+
+
+A good source of information is the free book by \citet{Oetiker2018} PONER TITULO Y URL
+
+This is a parenthetical cite\citep{Oetiker2018}
+
+This is a test \citep{Oetiker2000,Oetiker2001,Oetiker2002,Oetiker2003,Oetiker2004,Oetiker2005,Oetiker2006,Oetiker2007,Oetiker2008,Oetiker2009}
+
+\blindtext[15]
+
+
+\subsection{This is a subsection}
+
+\chapter{Some useful commands and examples}
+\epigraph{\emph{Anyone who considers arithmetical methods of producing random digits is, of course, in a state of sin.}}{John von Neumann\\\emph{Monte Carlo Method} (1951)}
+
+\blindtext[1]
+\citep{Oetiker2010,Oetiker2011,Oetiker2012,Oetiker2013,Oetiker2014,Oetiker2015,Oetiker2016,Oetiker2017,Oetiker2018,Oetiker2019}
+\citep{Oetiker2020,Oetiker2021,Oetiker2022,Oetiker2023,Oetiker2024,Oetiker2025,Oetiker2026,Oetiker2027,Oetiker2028,Oetiker2029,Oetiker2030,Oetiker2031,Oetiker2032,Oetiker2033,Oetiker2034,Oetiker2035,Oetiker2036,Oetiker2037,Oetiker2038,Oetiker2039}
+
+\blindtext[15]
+
+% \section{Figures}
+
+% \section{Tables}
+
+% In this chapter, a new design is proposed in which the contributions of the best materials are combined. Based on the experience from the previous analyses, a combination of an aluminium case and an inner reinforcement of GFRP embedded in PET foam is selected. Some preliminary work has been done in order to define the geometrical design of the element in which single and double-hat square and hexagonal sections are taken into consideration. These preliminary tests showed that a double-hat hexagonal section should be used in order to guarantee the best performance in terms of specific energy absorption and stability of the collapse modes.
+
+% \section[Study of the crushing performance of different designs for the outer metal tube]{Study of the crushing performance of different designs for the outer metal tube}
+
+% In previous chapters, several designs in steel and aluminium have been analyzed. Results showed that whether the force levels want to be kept in a range up to 100 kN (approximately), designs in aluminium should be considered. In this chapter, the role of the outer tube wants to be reduced to a constrain system with a regular, stable collapse mode with a minimum weight, assigning the task of increasing the force levels to the inner part made of \gls{PET} foam and \gls{GFRP}. To that end, a cold-formed aluminium hollow section is used in this chapter, for its lower density and stable collapse mechanisms.
+
+% Three different alternatives are analyzed for the outer tube: a single-hat square section, a double-hat square section and a double-hat hexagonal section. Dimensions and details of the three alternatives are summarized in \cref{fig:geometrias}.
+% \begin{figure}[htpb]
+%    \centering
+%         \includegraphics[width=0.45\columnwidth]{defsh2cm} \hspace{5pt}
+%         \includegraphics[width=0.45\columnwidth]{defsh2cmfinal}
+%       \caption{Unstable, non-symmetrical collapse of a single-hat square section with a flange length of 20 mm.}
+%   \label{fig:geometrias}
+% \end{figure}
+
+
+% % \begin{figure}[htpb]
+% %   \centering
+% %   \includegraphics[width=0.45\columnwidth]{single_2cm}\hspace{6pt}
+% %   \includegraphics[width=0.45\columnwidth]{double_2cm} \\[20pt]
+% %   \includegraphics[width=0.45\columnwidth]{doublehex_2cm}
+% %   \caption{Different cold-formed cross-sections considered for the outer tube of the absorber. Spot welds are indicated in the flanges. Dimensions in millimeters.}
+% %   \label{fig:geometrias}
+% % \end{figure}
+
+% The side lengths have been selected so that the three tubes have the same perimeter, and therefore the same weight, according to
+% \begin{equation}
+%   l_{hexagon}=\dfrac{2}{3}l_{square}
+% \end{equation}
+% The tubes have been analyzed for flange lengths $f$ of 10 and 20 mm.
+
+% The crushing simulations carried out on hollow single and double-hat sections showed that non-regular modes were developed in all specimens. The collapse of single-hat sections is unstable from the very beginning, whereas double-hat sections start their collapse following a symmetric scheme that turns into antisymmetric with the ongoing crushing. The length of the flanges housing the weldings has a certain influence on the point where the symmetric collapse turns into antisymmetric, as stated in (REFERENCIA CHINOS ALETAS). BUSCAR REFERENCIAS DE NORMAN JONES.
+
+% Some views of the finite element models during the crushing are offered in REFERENCIA FIGURA. Unstable collapses are observed in all configurations.
+% \begin{equation}
+%   A=\pi r^2
+% \end{equation}
+
+\chapter{Some other chapter without references}
+
+\blindtext[3]
+
+\chapter{Some other chapter with references}
+
+This is a test \citep{Oetiker2020,Oetiker2021,Oetiker2022,Oetiker2023,Oetiker2024}
+
+\blindtext[5]
+
+\appendix
+% % % \include{capt4}
+
+\chapter{Appendix title with references}
+This is a test \citep{Oetiker2020,Oetiker2021,Oetiker2022,Oetiker2023,Oetiker2024}
+
+\blindtext[5]
+
+\chapter{Another appendix title without references}
+
+\blindtext[10]
+
+\chapter{Another appendix title with references}
+This is a test \citep{Oetiker2020,Oetiker2021,Oetiker2022,Oetiker2023,Oetiker2024}
+
+\blindtext[5]
+
+
+\end{document}
